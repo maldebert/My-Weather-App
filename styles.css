@@ -88,6 +88,11 @@ main {
   font-size: 28px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
 footer {
   border-top: 1px solid #f1fafe;
   padding-top: 30px;
