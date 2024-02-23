@@ -10,15 +10,15 @@ function refreshWeather(response) {
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
-  temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
+  temperatureElement.innerHTML = Math.round(temperature);
 }
 
 function formatDate(date) {
-  let hours = date.getHourse();
   let minutes = date.getMinutes();
+  let hours = date.getHourse();
   let days = [
     "Sunday",
     "Monday",
