@@ -64,17 +64,20 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `
-<div class="weather-forecast-day">
-<div class="weather-forecast-date">${day}</div>
-<div class="weather-forecast-icon">🌧️</div>
-<div class="weather-forecast-temperature">
-<span class="weather-forecast-temperature-max">18° </span><span class="weather-forecast-temperature-min">12°</span>
-</div>
-</div>`;
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max">
+            <strong>15º</strong>
+          </span><span class="weather-forecast-temperature-min">9º</div>
+        </span>
+      </div>
+    `;
   });
 
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innherHTML = forecastHtml;
+  forecastElement.innerHTML = forecastHtml;
 }
 
 let searchFormElement = document.querySelector("#search-form");
